@@ -9,6 +9,8 @@ export default async function Home() {
     
     const data = await fetch(`https://teo-web-creator-api.onrender.com/api/users/${userId}`)
     user = await data.json() 
+    console.log(user);
+    
   }
 
   return (
