@@ -4,6 +4,9 @@ export default async function Home() {
   const userId = process.env.USER_ID ? process.env.USER_ID : false;
   let user = null;
   if (userId) { 
+    console.log("ENTRA");
+    console.log(userId);
+    
     const data = await fetch(`https://teo-web-creator-api.onrender.com/api/users/${userId}`)
     user = await data.json() 
   }
