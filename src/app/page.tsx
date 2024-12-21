@@ -3,6 +3,9 @@ import Image from "next/image";
 export default async function Home() {
   const userId = process.env.USER_ID ? process.env.USER_ID : false;
   let user = null;
+  console.log(userId);
+  console.log(process);
+  
   if (userId) { 
     console.log("ENTRA");
     console.log(userId);
